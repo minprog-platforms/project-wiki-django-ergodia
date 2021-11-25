@@ -21,7 +21,7 @@ For this operation we essentially will need two HTML pages namely:
 * **Normal page**
 
 By using the get_entry function in the util.py file, the markdown file can be found and loaded. 
-This markdown file needs to be converted to HTML format to make sure it can be showed on the screen. The output of this needs to be stored in a new template file specifically for the entry pages.
+This markdown file needs to be converted to HTML format, using the markdown2 libary of Python, to make sure it can be showed on the screen. The output of this needs to be stored in a new template file specifically for the entry pages.
 
 Example:
 ![Normal Page Example](sketches/normal_page.png)
@@ -36,9 +36,24 @@ Example:
 ### Index Page
 
 The index page, or the homepage, has been already delivered in a minimalistic form.
-It needs to be updated so that every entry has a hyperlink which links to their entry page. In order to make this work a change in the template file of the index will be neccesary.
+It needs to be updated so that every entry, that can be retrieved using the list_entries function in the utils.py, has a hyperlink which links to their entry page. In order to make this work a change in the template file of the index will be neccesary.
 
 Example:
-![Error Page Example](sketches/index_page.png)
+![Index Page Example](sketches/index_page.png)
+
+### Search Page
+
+The search page allows users to search for information of a certain subject. If the user enters something that matches up with the name of one of the entries then the user is immediately redirected to that entry page. The get_entry function can be used for that. 
+It also needs to list entries if a part of the searchterm is in a name of a file. These entries, together with their hyperlink, need to be listed on a new page and thus a new HTML template. This list can not be retrieved by using the get_entry function, since it requires full names. So a method to find these entries need to be made in views.py. If there are no entries with the added synonyms, an error message needs to be shown instead.
+
+* **Search result page**
+
+Example:
+![Search Page Example](sketches/search_page.png)
+
+* **Search result page error**
+
+Example:
+![Search Page Error Example](sketches/search_page_error.png)
 
 
