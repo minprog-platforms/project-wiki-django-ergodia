@@ -84,3 +84,9 @@ Example:
 This button present in the navigation bar needs to redirect the user to a random page available. By clicking on the button a function need to be called which lists each available page and then pick one for the user. Then the page of that entry need to be called.
 
 ## Workflow diagram
+The workflow diagram demonstrates the routes that the user could take by pressing certain button or using other items such as the search bar.
+
+![Workflow](sketches/workflow.png)
+
+* Note:
+The items listed in the naviagation bar can be used across all pages. The arrows are excluded to make everything a bit more clear
