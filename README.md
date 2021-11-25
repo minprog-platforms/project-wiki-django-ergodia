@@ -19,6 +19,7 @@ Those pages can be accessed via /wiki/"pagename" which needs to be defined in th
 
 For this operation we essentially will need two pages namely:
 * *Normal page*
+
 By using the get_entry function in the util.py file, the markdown file can be found and loaded. 
 This markdown file needs to be converted to HTML format to make sure it can be showed on the screen. The output of this needs to be stored in a new template file specifically for the entry pages.
 
@@ -26,6 +27,7 @@ Example:
 ![Normal Page Example](sketches/normal_page.png)
 
 * *Error page*
+
 If the file cannot be found then the user needs to be redirected to an error page which needs to have a specific view function complete with an URL and HTML template.
 
 Example:
