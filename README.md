@@ -33,4 +33,12 @@ If the file cannot be found then the user needs to be redirected to an error pag
 Example:
 ![Error Page Example](sketches/error_page.png)
 
+### Index Page
+
+The index page, or the homepage, has been already delivered in a minimalistic form.
+It needs to be updated so that every entry has a hyperlink which links to their entry page. In order to make this work a change in the template file of the index will be neccesary.
+
+Example:
+![Error Page Example](sketches/index_page.png)
+
 
