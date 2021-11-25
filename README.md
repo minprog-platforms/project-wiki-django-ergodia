@@ -56,4 +56,10 @@ Example:
 Example:
 ![Search Page Error Example](sketches/search_page_error.png)
 
+### New Page
+The user should also be able to add new pages to the website via a new button of the naviagation bar, which needs to be added in the layout.html file. This button needs to be redirected to a new HTML page which requires a new template. It should house a textarea where the user can type in his new page; a textarea to name the new page and a save button. 
 
+The information in the textarea needs to be POSTed to the page which can store the new page and convert it to a new markdown file. It should give an error if the name given already exists. This needs to be added to a the new function specifically made for this page in views.py. 
+
+Example:
+![New Page Example](sketches/new_page_error.png)
