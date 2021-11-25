@@ -1,12 +1,15 @@
 # Libri
 
-TODO: Describe your application here.
+This website is a encyclopedia where users can find information about certian topics which are stored as markdown files in the entries map.
 
 
 ## Getting Started
 
-TODO: Describe steps to install requirements and get the application running.
-
+To run this program Python is required with the following libaries:
+* Django 
+    ```pip install Django```
+* Markdown2
+    ```pip install Markdown2```
 
 ## Design Document
 
