@@ -22,6 +22,7 @@ For this operation we essentially will need two HTML pages namely:
 
 By using the get_entry function in the util.py file, the markdown file can be found and loaded. 
 This markdown file needs to be converted to HTML format, using the markdown2 libary of Python, to make sure it can be showed on the screen. The output of this needs to be stored in a new template file specifically for the entry pages.
+The page also houses a edit button which redirects the user to a page where the page can be editted.
 
 Example:
 ![Normal Page Example](sketches/normal_page.png)
@@ -59,7 +60,24 @@ Example:
 ### New Page
 The user should also be able to add new pages to the website via the button of the naviagation bar. This button needs to be redirected to a new HTML page which requires a new template. It should house a textarea where the user can type in his new page; a textarea to name the new page and a save button. 
 
-The information in the textarea needs to be POSTed to the page which can store the new page and convert it to a new markdown file. It should give an error if the name given already exists. This needs to be added to a the new function specifically made for this page in views.py. 
+The information in the textarea needs to be POSTed to the page which can store the new page and convert it to a new markdown file. It should give an error if the name given already exists. This needs to be added to a the new function specifically made for this page in views.py.
+
+The user should be redirected to the page that the user just made.
 
 Example:
 ![New Page Example](sketches/new_page.png)
+
+### Edit Page
+The user should also be able to add edit existing pages via the button of available on every entry page. This button needs to be redirected to a new HTML page which requires a new template. It should house a textaream, with the default value of the existing page, where the user can edit the page and a save button. 
+
+The information in the textarea needs to be POSTed to the page which can store the new page and convert it to a markdown file which will overwrite the old markdown file. This needs to be added to a the new function specifically made for this page in views.py.
+
+The user should be redirected to the page that the user just changed.
+
+Example:
+![Edit Page Example](sketches/edit_page.png)
+
+### Random Page
+This button present in the navigation bar needs to redirect the user to a random page available. By clicking on the button a function need to be called which lists each available page and then pick one for the user. Then the page of that entry need to be called.
+
+## Workflow diagram
