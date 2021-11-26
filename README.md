@@ -10,6 +10,8 @@ To run this program Python is required with the following libaries:
     ```pip install Django```
 * Markdown2
     ```pip install Markdown2```
+* Django Bootsrap Form
+    ```pip install django-bootstrap-form```
 
 ## Design Document
 
@@ -81,7 +83,7 @@ Example:
 ![Edit Page Example](sketches/edit_page.png)
 
 ### Random Page
-This button present in the navigation bar needs to redirect the user to a random page available. By clicking on the button a function need to be called which lists each available page and then pick one for the user. Then the page of that entry need to be called.
+This button present in the navigation bar needs to redirect the user to a random page available. By clicking on the button a function need to be called which lists each available page and then pick one for the user. Then the page of that entry needs to be called.
 
 ## Workflow diagram
 The workflow diagram demonstrates the routes that the user could take by pressing certain button or using other items present on the page, such as the search bar.
