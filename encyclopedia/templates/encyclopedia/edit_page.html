@@ -5,11 +5,11 @@
 {% endblock %}
 
 {% block body %}
-    <h1>Edit Page</h1>
+    <h1>Edit {{ page_name }}</h1>
 
     {% load bootstrap %}
 
-    <form action="{% url 'edit_page' %}" method="post">
+    <form action="{% url 'edit_page' page_name %}" method="post">
         {% csrf_token %}
         {{ form|bootstrap_horizontal:'col-md-4' }}
         <button type="submit">Save</button>

@@ -7,5 +7,7 @@
 {% block body %}
     {{ text|safe }}
     <br>
-    <a class="item" href="{{ request.path }}/edit_page" >Edit</a>
+    <form action="{{ request.path }}/edit">
+        <input type="submit" value="Edit" />
+    </form>
 {% endblock %}
