@@ -5,13 +5,15 @@ This website is a encyclopedia where users can find information about certian to
 
 ## Getting Started
 
-To run this program Python is required with the following libaries:
+To run this program Python3 is required with the following libaries:
 * Django 
     ```pip install Django```
 * Markdown2
     ```pip install Markdown2```
 * Django Bootsrap Form
     ```pip install django-bootstrap-form```
+
+By running ```python3 manage.py runserver``` the application will be run and the website can be accessed.
 
 ## Design Document
 
